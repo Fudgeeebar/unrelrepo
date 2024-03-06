@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_1sdp"
+    android:id="@+id/shimmerLayoutOptionsChild">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#676767"
+            android:text="                   "
+            android:button="@drawable/checkbox_background_options"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/shimmerbg"
+            android:fontFamily="@font/uber_move"
+            android:textSize="@dimen/_5ssp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:gravity="right"
+            android:textColor="#676767"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/check_box"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/shimmerbg"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:textSize="@dimen/_5ssp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</com.facebook.shimmer.ShimmerFrameLayout>

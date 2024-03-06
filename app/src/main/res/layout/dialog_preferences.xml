@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="@dimen/_257sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/_6sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <CheckBox
+                    android:id="@+id/cash_check"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:background="@drawable/checkbox_background_preference"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+
+                    android:text="Cash"
+                    android:textColor="@drawable/checkbox_text_color_preferences"
+                    android:textSize="@dimen/_5ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/wallet_check"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/wallet_check"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:background="@drawable/checkbox_background_preference"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="E-wallet"
+                    android:textColor="@drawable/checkbox_text_color_preferences"
+                    android:textSize="@dimen/_5ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cash_check"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <CheckBox
+                    android:id="@+id/gcash_check"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_29sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:background="@drawable/checkbox_background_preference"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="G Cash\n(Maintenance)"
+                    android:textColor="@drawable/checkbox_text_color_preferences"
+                    android:textSize="@dimen/_5ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/maya_check"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:enabled="false"/>
+
+                <CheckBox
+                    android:id="@+id/maya_check"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_29sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:background="@drawable/checkbox_background_preference"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Maya"
+                    android:textColor="@drawable/checkbox_text_color_preferences"
+                    android:textSize="@dimen/_5ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/grab_check"
+                    app:layout_constraintStart_toEndOf="@+id/gcash_check"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:enabled="false"/>
+
+
+                <CheckBox
+                    android:id="@+id/grab_check"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_29sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:background="@drawable/checkbox_background_preference"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="GrabPay"
+                    android:textColor="@drawable/checkbox_text_color_preferences"
+                    android:textSize="@dimen/_5ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/shopee_check"
+                    app:layout_constraintStart_toEndOf="@+id/maya_check"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:enabled="false"/>
+
+                <CheckBox
+                    android:id="@+id/shopee_check"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_29sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:background="@drawable/checkbox_background_preference"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="ShopeePay"
+                    android:textColor="@drawable/checkbox_text_color_preferences"
+                    android:textSize="@dimen/_5ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/grab_check"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:enabled="false"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <FrameLayout
+                android:id="@+id/nativeAdLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <CheckBox
+                    android:id="@+id/dine_in_check"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_29sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:background="@drawable/checkbox_background_preference"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="Dine In"
+                    android:textColor="@drawable/checkbox_text_color_preferences"
+                    android:textSize="@dimen/_5ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/take_out_check"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/take_out_check"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_29sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:background="@drawable/checkbox_background_preference"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="15dp"
+                    android:text="Take Out"
+                    android:textColor="@drawable/checkbox_text_color_preferences"
+                    android:textSize="@dimen/_5ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/delivery_check"
+                    app:layout_constraintStart_toEndOf="@+id/dine_in_check"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <CheckBox
+                    android:id="@+id/delivery_check"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_29sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:background="@drawable/checkbox_background_preference"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="15dp"
+                    android:text="Delivery\n(Maintenance)"
+                    android:textColor="@drawable/checkbox_text_color_preferences"
+                    android:textSize="@dimen/_5ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/take_out_check"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:enabled="false"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:id="@+id/add_to_cart_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_positive"
+                android:enabled="false"
+                android:paddingVertical="@dimen/_4sdp">
+
+                <TextView
+                    android:id="@+id/btn_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/uber_move_bold"
+                    android:text="Confirm"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_5ssp"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

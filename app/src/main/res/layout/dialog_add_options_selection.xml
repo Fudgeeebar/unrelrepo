@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="@dimen/_134sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="@dimen/_6sdp">
+
+
+
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:id="@+id/add_category_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/button_background_positive"
+            android:enabled="false">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/uber_move_bold"
+                android:text="Add option category"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_5ssp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:id="@+id/add_product_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/button_background_neutral"
+            android:enabled="false">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/uber_move_bold"
+                android:text="Add another option"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_5ssp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:id="@+id/cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/button_background_negative"
+            android:enabled="false">
+
+
+            <TextView
+                android:id="@+id/btn_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/uber_move_bold"
+                android:text="Cancel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_5ssp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

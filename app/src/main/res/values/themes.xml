@@ -1,0 +1,83 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PHLPosCasU" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorGreen</item>
+        <item name="colorPrimaryVariant">@color/colorGreen</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SideSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+
+        <item name="android:typeface">monospace</item>
+<!--        <item name="android:background">@drawable/card_product_side_sheet_background</item>-->
+    </style>
+
+    <style name="BaseSideSheetDialog" parent="@style/Theme.Material3.Light.SideSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:typeface">monospace</item>
+        <item name="bottomSheetStyle">@style/SideSheet</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseSideSheetDialog" />
+
+    <style name="SideSheetDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Add any additional window attributes or animations here -->
+    </style>
+
+
+
+    <!-- Animation for dialog box -->
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">
+<!--        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>-->
+
+    </style>
+
+    <style name="AlertDialogTheme">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.PHLPosCasU.AdAttribution">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:text">AD</item>
+        <item name="android:background">#FFCC66</item>
+        <item name="android:width">15dp</item>
+        <item name="android:height">15dp</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/colorDarkGray</item>
+        <item name="boxStrokeWidth">@dimen/_1sdp</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/_2sdp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/_2sdp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/_2sdp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/_2sdp</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="helperTextTextColor">@color/black</item>
+    </style>
+
+    <style name="NavigationMenuText">
+        <item name="android:fontFamily">@font/uber_move_bold</item>
+        <item name="android:textSize">@dimen/_7ssp</item>
+    </style>
+</resources>

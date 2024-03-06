@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:insetLeft="@dimen/_2sdp"
+    android:insetTop="@dimen/_2sdp"
+    android:insetBottom="@dimen/_2sdp"
+    android:insetRight="@dimen/_2sdp"
+    >
+
+<!--    <shape android:shape="rectangle">-->
+<!--        <corners android:radius="20dp"/>-->
+<!--        <solid android:color="#BE111420"/>-->
+<!--        <stroke android:width="5dp" android:color="#FFF"/>-->
+<!--    </shape>-->
+
+    <shape android:shape="rectangle">
+        <corners android:radius="@dimen/_5sdp"/>
+        <solid android:color="@color/offWhite"/>
+    </shape>
+
+</inset>

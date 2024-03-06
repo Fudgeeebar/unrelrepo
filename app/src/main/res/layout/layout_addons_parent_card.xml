@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shimmerLayoutOptionsParent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_1sdp">
+
+
+            <TextView
+                android:layout_marginRight="@dimen/_3sdp"
+                android:id="@+id/option_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                                                                    "
+                android:background="@drawable/shimmerbg"
+                android:fontFamily="@font/uber_move_bold"
+                android:textSize="@dimen/_5ssp"/>
+
+            <TextView
+                android:id="@+id/option_quantity_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="                   "
+                android:background="@drawable/shimmerbg"
+                android:fontFamily="@font/uber_move_bold"
+                android:textSize="@dimen/_5ssp"
+                />
+        </LinearLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="@dimen/_1sdp"
+        android:id="@+id/option_child_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/shimmerLayoutParentCart">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_2sdp"
+        >
+        <TextView
+            android:id="@+id/cart_quantity"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:text="0"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_4ssp"
+            android:background="@drawable/quantity_indicator_background"
+            android:fontFamily="@font/uber_move_bold"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:background="@drawable/shimmerbg"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/product_price"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="@dimen/_5ssp"
+                    android:fontFamily="@font/uber_move_bold"/>
+
+                <TextView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/shimmerbg"
+                    android:maxLines="2"
+                    android:text="                                               "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/product_name"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="@dimen/_5ssp"
+                    android:fontFamily="@font/uber_move_bold"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/_1sdp"
+                android:id="@+id/options_child_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_2sdp"
+                android:id="@+id/edit_btn"
+                android:padding="@dimen/_1sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                "
+                android:textStyle="bold"
+                android:background="@drawable/shimmerbg"
+                android:textColor="@color/colorBlue"
+                android:fontFamily="@font/uber_move_bold"
+                android:textSize="@dimen/_5ssp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</com.facebook.shimmer.ShimmerFrameLayout>
